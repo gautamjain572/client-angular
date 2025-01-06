@@ -1,0 +1,11 @@
+.app-icon > img{
+    height: 3.5rem;
+}
+
+.search-form{
+    margin-left: 20px;
+}
+.searchicon{
+    margin-left: -35px!important;
+    z-index: 10;
+}
