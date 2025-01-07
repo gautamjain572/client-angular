@@ -9,6 +9,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CarouselModule as owlCarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     LayoutModule,
     BrowserAnimationsModule,
     CarouselModule,
+    owlCarouselModule,
   ],
   providers: [
     provideClientHydration(withEventReplay()),
