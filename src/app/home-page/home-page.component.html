@@ -19,13 +19,14 @@
       </div>
     </div>
     <div class="row">
-      <owl-carousel-o [options]="customOptions">
-        <ng-container *ngFor="let slide of slidesStore">
-          <ng-template carouselSlide [id]="slide.id">
-            <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
-          </ng-template>
-        </ng-container>
-      </owl-carousel-o>
+      <div class="col-md-4 col-sm-6 mb-4" *ngFor="let category of categories">
+        <div class="category-item">
+          <img [src]="category.imageUrl" [alt]="category.name" class="img-fluid">
+          <div class="category-info">
+            <h4>{{ category.name }}</h4>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </div>

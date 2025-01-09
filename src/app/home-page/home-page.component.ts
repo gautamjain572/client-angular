@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-home-page',
@@ -9,62 +8,13 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent {
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
-    navSpeed: 700,
-    navText: ['', ''],
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
-        items: 4
-      }
-    },
-    nav: true
-  }
-  slidesStore: any[] = [
-    {
-      id: '1',
-      src: "/client/public/i1.jpg",
-      alt: 'hello',
-      title: 'clothes',
-    },
-    {
-      id: '2',
-      src: 'i1.jpg',
-      alt: 'hello',
-      title: 'clothes',
-    }, {
-      id: '3',
-      src: 'i1.jpg',
-      alt: 'hello',
-      title: 'clothes',
-    }, {
-      id: '4',
-      src: 'i1.jpg',
-      alt: 'hello',
-      title: 'clothes',
-    }, {
-      id: '5',
-      src: 'i1.jpg',
-      alt: 'hello',
-      title: 'clothes',
-    }, {
-      id: '6',
-      src: 'i1.jpg',
-      alt: 'hello',
-      title: 'clothes',
-    },
-  ]
+  categories = [
+    { name: 'Category 1', imageUrl: 'i1.jpg' },
+    { name: 'Category 2', imageUrl: 'i2.png' },
+    { name: 'Category 3', imageUrl: 'i3.jpg' },
+    { name: 'Category 4', imageUrl: 'i4.jpg' },
+    { name: 'Category 5', imageUrl: 'i5.png' },
+    { name: 'Category 6', imageUrl: 'i6.png' }
+  ];
+
 }
