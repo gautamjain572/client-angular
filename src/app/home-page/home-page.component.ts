@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import {MatCardModule} from '@angular/material/card';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-home-page',
-  standalone: false,
-
+  standalone: true,
   templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.css'
+  styleUrl: './home-page.component.css',
+  imports: [CommonModule, CarouselModule, MatCardModule]
 })
 export class HomePageComponent {
   categories = [
